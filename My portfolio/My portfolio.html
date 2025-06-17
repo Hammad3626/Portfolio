@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script defer src="java.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <aside>
+            <ul class="links">
+                <li onclick="navigate(0)" class="activelink"><i class="fa-solid fa-house"></i>
+                    <p>Home</p>
+                </li>
+                <li onclick="navigate(1)"><i class="fa-solid fa-user"></i>
+                    <p>About me</p>
+                </li>
+                <li onclick="navigate(2)"><i class="fa-solid fa-list"></i>
+                    <p>Services</p>
+                </li>
+                <li onclick="navigate(3)"><i class="fa-solid fa-images"></i>
+                    <p>Gallery</p>
+                </li>
+                <li onclick="navigate(4)"><i class="fa-solid fa-comments"></i>
+                    <p>Contact me</p>
+                </li>
+            </ul>
+        </aside>
+        <div class="swiper mySwiper">
+            <div class="SlideContainer swiper-wrapper">
+                <div class="swiper-slide home-slide">
+                    <div class="HomeContent">
+                        <h1>Hi i'm <span class="stylized-name">Hammad</span>,</h1>
+                        <h2>A <span class="professions">Web Designer</span></h2>
+                        <p class="heroline">Welcome to my portfolio! I am Hammad, a dedicated and passionate Web Designer with a strong background in Web Designing.
+                             I thrive on creativity, innovation, and problem-solving, consistently delivering high-quality work.
+                              Explore my projects and accomplishments to see how my expertise can bring value to your next venture.</p>
+                            <div class="buttonGroup"><button onclick="navigate(4)">Hire Me</button><button onclick="navigate(4)">Contact Me</button></div>
+                    </div>
+                    <div class="SideImg">
+                        <div class="top-right-corner">
+                            <hr class="hr1">
+                            <hr class="hr2">
+                        </div>
+                        <img src="me.jpg" alt="">
+                        <div class="bottom-left-corner">
+                            <hr class="hr1">
+                            <hr class="hr2">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="about-us">
+                        <h1 class="heading">About Me</h1>
+                        <h3 class="sub-heading">I'm Hammad, <span class="professions">A Web Designer</span></h3>
+                        <p class="aboutme-details">
+                            I am a passionate Web Designer, dedicated to creating innovative solutions and continuously learning to stay ahead in my field.
+                            Here's some information about me, my experience and my courses etc.
+                        </p>
+                        <div class="about-me-division">
+                            <div class="about-me-table">
+                                <li><span>Experience:</span><br>6 months (Software House)</br>3 months (Call Center)</li>
+                                <li><span>Country:</span> Pakistan</li>
+                                <li><span>Availability:</span> 24/7</li>
+                                <li><span>Age:</span> 21</li>
+                                <li><span>Contact:</span> +923084397946</li>
+                                <li><span>Language used:</span> Html+css+json</li>
+                                <li><span>Degree:</span> Ics, BSSE continue</li>
+                                <div class="buttonGroup" onclick="navigate(4)"><button>Hire me</button><button>Contact me</button></div>
+                            </div>
+                            <div class="skill-bar">
+                                <li>
+                                    <p>HTML</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width: 99%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>CSS</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width: 80%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>JavaScript</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width: 85%;"></div>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide services">
+                    <h1 class="heading">Services</h1>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                        <h2>Web Design</h2>
+                        <p>Crafting intuitive and visually appealing websites tailored to meet your unique business needs.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+                        <h2>Web Development</h2>
+                        <p>Crafting responsive and user-friendly websites to meet your business needs and objectives.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <h2>SEO</h2>
+                        <p>Optimizing websites to boost visibility and drive organic traffic through strategic SEO practices.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-solid fa-image"></i></div>
+                        <h2>Graphic Designer</h2>
+                        <p>Offering creative solutions that blend aesthetic vision with strategic thinking to bring your brand to life</p>
+                    </div>
+                </div>
+                <div class="swiper-slide gallery">
+                    <h1 class="heading">Gallery</h1>
+                    <div class="project"><img src="1.jpg" alt=""></div>
+                    <div class="project"><img src="2.jpg" alt=""></div>
+                    <div class="project"><img src="3.jpg" alt=""></div>
+                    <div class="project"><img src="4.jpg" alt=""></div>
+                    <div class="project"><img src="5.jpg" alt=""></div>
+                    <div class="project"><img src="6.jpg" alt=""></div>
+                </div>
+                <div class="swiper-slide contactMe">
+                    <h1 class="heading">Contact Me</h1>
+                    <div class="contactinfo"><i class="fa-solid fa-phone"></i>
+                    <h3>Mobile No</h3>
+                    <p>+923084397946</p>
+                </div>
+                    <div class="contactinfo"><i class="fa-solid fa-location-dot"></i>
+                    <h3>Location</h3>
+                    <p>Sargodha, Pakistan</p>
+                </div>
+                    <div class="contactinfo"><i class="fa-solid fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>alihammad10175@gmail.com</p>
+                </div>
+                    <div class="contactinfo"><i class="fa-solid fa-globe"></i>
+                    <h3>Website</h3>
+                    <p>www.123movies.com</p>
+                </div>
+                <form>
+                    <h2>Send a message <div class="SocialLinks">
+                        <i class="fa-brands fa-codepen"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-thread"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                    </div> </h2>
+                    <input type="text" placeholder="name">
+                    <input type="text" placeholder="email">
+                    <textarea rows="10" placeholder="Type your message here...."></textarea>
+                    <button class="primary">Send</button>
+
+                </form>
+                <footer>
+                    <li>copyright 2024 Hammad.</li>
+                </footer>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
